@@ -16,7 +16,7 @@ import {
 const app = express();
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://main--cheery-granita-36d92d.netlify.app/",
     methods: ['GET', 'POST'],
     credentials: true,
   }),
