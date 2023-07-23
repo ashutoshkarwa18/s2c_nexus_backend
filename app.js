@@ -16,7 +16,7 @@ import {
 const app = express();
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: ["http://localhost:3000","https://s2cnexus.onrender.com"],
     methods: ['GET', 'POST'],
     credentials: true,
   }),
