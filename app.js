@@ -34,9 +34,10 @@ app.use("/discussion", discussionController);
 app.use("/email", emailController)
 app.use("/admin", adminController)
 
+const PORT = process.env.PORT
 // Start Server here
-app.listen(8080, () => {
-  console.log('Example app listening on port 8080!');
+app.listen(PORT, () => {
+  console.log('Example app listening on port ' + PORT);
   mongoose.connect(process.env.DB_HOST).then(() => {
     console.log(`Conneted to mongoDB at port 27017`);
   });
